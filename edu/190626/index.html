@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>css 속성 기초</title>
+	<style>
+	/* reset */
+	*{
+		margin:0;
+		padding:0;
+		line-height:1;
+		color:#222;
+		font-size:15px;
+		box-sizing:border-box;
+	}
+	html,body{
+		height:5000%;
+	}
+	#boxwrap{
+
+	}
+	.boxwrap{
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		width:500px;
+		height:500px;
+		margin:auto;
+		border:1px solid #000;
+		/* border-radius:50%; */
+		border-radius:0px 100px 0 100px;
+	}
+	.boxwrap div{
+		position:absolute;
+		width:100px;
+		height:100px;
+		background-color:aqua;
+	}
+	.boxwrap .box1{
+		top:40px;
+		background-color:aquamarine
+	}
+	.boxwrap .box2{
+		top:40px;
+		right:0;
+		background-color:blue
+	}
+	.boxwrap .box3{
+		/* content box 정가운데 정렬 첫번째 방법 */
+		/* top:50%;
+		left:50%;	
+		margin-top:-50px;
+		margin-left:-50px; */
+
+		/* 두번째 방법 - 가로 세로 사이즈가 존재할때 */
+		/* top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		margin:auto; */
+
+		/* 세번째 방법 - 따로 계산할필요없이 알아서 조절 */
+		position:fixed;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+
+
+		background-color:darkorchid
+	}
+	.boxwrap .box4{
+		bottom:100px;
+		right:0;
+		background-color:chartreuse
+	}
+	.boxwrap .box5{
+		bottom:100px;
+		left:0;
+		background-color:chocolate
+	}
+	</style>
+</head>
+<body>
+	<div id="boxwrap" class="boxwrap">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+	</div>
+
+<!-- 
+overflow - 박스크기에 콘텐츠 내용이 넘칠 경우 제어 함.
+overflow:auto;
+overflow:scroll;
+overflow:hidden;
+overflow-x:auto;
+overflow-y:auto;
+
+visibility
+display
+
+position
+static;relative, absolute, fixed
+relative - 상대값 본인이 기준이 되어서 움직임.
+absolute - 절대값 부모기준에 따라서 움직임 
+부모에 position속성이 있느냐 없느냐에 따라 위치값이 달라짐.
+fixed - 고정값 무조건 부모는 body기준으로 고정됨.
+
+top
+right
+bottom
+left
+z-index
+
+float - 레이아웃 잡을때 활용
+clear
+
+width - 가로 크기
+height - 세로 크기
+margin - 바깥 여백
+margin:0;
+amrgin:0 auto;
+margin:0(상하) auto(좌우) 0;
+margin:0 auto 0 auto;
+margin-top:0;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding - 안 쪽 여백
+padding:0;
+padding:0 0;
+padding:0 0 0;
+padding:0 0 0 0;
+padding-top
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+
+border - 테두리
+border:1px solid black; - 축약형
+border-top-width:2px;
+border-top:1px solid black;
+border-right:1px solid black;
+border-bottom:1px solid black;
+border-left:1px solid black;
+border-style:solid, dotted, dashed;
+border-width:1px;
+border-color:black;
+border-top-color:blue;
+color값 지정하는 방식 - black, #000000, #000, rgb(0,0,0), rgba(0,0,0,.5)
+
+border-radius ->라운드처리됨
+
+background
+color
+font-size
+font-weight - 두께조절
+font-family - 서체
+font-transform
+
+box-shadow
+text-shadow
+
+box-sizing:border-box
+
+transform
+cursor:pointer - 마우스모양 지정
+-->
+</body>
+</html>

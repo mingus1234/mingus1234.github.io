@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>레이아웃 연습</title>
+	<style>
+	/* reset */
+	*{
+	margin:0;
+	padding:10px;
+	box-sizing:border-box;
+	}
+	/* Layout */
+	.wrap{
+		width:1200px;
+		margin:0 auto;
+	}
+	.header{
+		height:100px;
+		background-color:turquoise
+	}
+	.nav{
+		height:100px;
+		/* margin:20px auto; */
+		background-color:goldenrod
+	}
+	.main{
+		background-color:lawngreen
+	}
+	.main::after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+	.article1{
+		float:left;
+		width:400px;
+		height:100px;
+		margin:20px 60px;
+		background-color:lightcoral
+	}
+	.article2{
+		float:right;
+		width:400px;
+		height:100px;
+		margin:20px 60px;
+		background-color:lightcoral
+	}
+	.csection{
+		float:left;
+		width:500px;
+		height:500px;
+		margin:20px 20px;
+		background-color:hotpink
+	}
+	.article3{
+		width:400px;
+		height:400px;
+		margin:40px;
+		background-color:lightpink
+	}
+	.aside{
+		float:right;
+		width:500px;
+		height:500px;
+		margin:20px 20px;
+		background-color:hotpink
+	}
+	.figure{
+		width:400px;
+		height:400px;
+		margin:40px;
+		background-color:lightpink
+	}
+	.figure div{
+		width:300px;
+		height:100px;
+		margin:60px auto;
+		background-color:snow
+	}
+	.footer{
+		height:80px;
+		background-color:darkblue
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header"></div>
+		<div class="nav"></div>
+		<div class="main">
+			<div class="article1"></div>
+			<div class="article2"></div>
+			<div class="csection">
+				<div class="article3"></div>
+			</div>
+			<div class="aside">
+				<div class="figure">
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer"></div>
+	</div>
+</body>
+</html>
