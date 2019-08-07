@@ -1,0 +1,25 @@
+
+/*Reset*/
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	font-family:"맑은 고딕";
+	line-height:1;
+	vertical-align:middle;
+	text-decoration:none; 
+	box-sizing:border-box;
+	font-style:normal;
+}
+/*숨김*/
+.tts{
+	overflow:hidden;
+	position:absolute;
+	width:1px;
+	height:1px;
+	line-height:1px;
+	z-index:-1;
+	color:transparent;
+}
+
+
